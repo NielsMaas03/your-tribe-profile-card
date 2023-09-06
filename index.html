@@ -1,65 +1,38 @@
 <!DOCTYPE html>
-<html lang="nl">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FDND Visitekaartje</title>
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-    
-    <article>
-      
-      <header>
-        
-        <h1>Niels Maas</h1>
-        
-        <p><em>Eerste jaars FDND student</em></p>
-        
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <title>Wijzig layout</title>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M15 19v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M15 5v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M5 15h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M5 9h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-        </button>
-        
-      </header>
-  
-      <img src="assets/IMG_0320.JPG" alt="" width="800" height="800">
-
-      <dl>
-        <dt>Gegevens</dt>
-        <ul style="list-style-type: circle">
-          <li>19 Jaar oud</li>
-          <li>Vinkeveen</li>
-          <li></li>
-          <li></li>
-        </ul>
-        <dd>🏆🏆🏆</dd>
-        
-        <dt>Hobbies</dt>
-        <dd>🏆🏆</dd>
-        
-        <dt>Ambities</dt>
-        <dd>🏆🏆🏆🏆</dd>
-      </dl>
-  
-      <p>Beste medestudenten mijn naam is Niels, Ik ben negentien jaar oud en kom uit Vinkeveen. Hiervoor heb ik al een eerdere opleiding gevolgd, namelijk International Business Studies. Dit is een MBO Niveau 4 opleiding. Deze opleiding volgde ik in Amstelveen.</p>
-      
-    </article>
-
-    <script src="scripts/script.js"></script>
-    
-  </body>
+    <title>Visite Kaartje Niels Maas</title>
+    <link REL="stylesheet" href="styles/style.css" />
+</head>
+<body>
+    <div class="business_card">
+        <div class="name_box">
+            <div class="name">
+                <h1>Niels Maas</h1>
+            </div>
+        </div>
+        <div class="profile_picture">
+            <div class="block1">
+                <div class="pp">
+                    <img class="pp" src="assets/IMG_0320.JPG" alt="pp1">
+                </div>
+            </div>
+            <div class="block2">
+                <div class="about_titel">
+                    <h2>About Me</h2>
+                    <ul>
+                        <li>19 Jaar</li>
+                        <li>Vinkeveen</li>
+                        <li>MBO niveau 4</li>
+                        <li>FDND</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content_box"></div>
+    </div>
+</body>
 </html>
