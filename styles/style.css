@@ -10,13 +10,14 @@ kleuren
 #283F3B = Dark slate gray
 */
 
+/* Hiermee haal je alle margin weg op de pagina */
 *{
     margin: 0;
 }
 
+/* Hiermee verander je de kleur van de bulletpoints  */
 ::marker{
     color: #283F3B;
-    size: 3cap;
 }
 
 h1{
@@ -41,11 +42,12 @@ ul{
     animation: zoom-in-out2 2s infinite;
 }
 
+/* Achtergrond van de webpagina */
 body{
     background-color: #283F3B ;
 }
 
-/*animatie*/
+/*Hiermee bepaal je de animatie*/
 @keyframes zoom-in-out1{
     0%{
         transform: scale(1);
@@ -72,7 +74,7 @@ body{
     }   
 }
 
-.main_container{
+.main_container{ /*met deze selector, selecteer ik de main div van de code waardoor ik bijvoorbeel de grootte en positie van de kaart kan bepalen*/
     /*size van de maincontainer*/
     width: 31.25em;
     height: 45em;
@@ -94,19 +96,18 @@ body{
 }
 
 .the_card:hover{
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); 
 }
 
 /*
 .the_card{
-    transform: rotateY(180deg);
-}
+    transform: rotateY(180deg);  aanzetten om kaart te draaien om vervoglens de achterkant aan te passen.
+}   
 */
 
- /*terug zetten om kaart weer te draaien om achterkant aan te passen*/
 
 .the_front{
-    /*visibility: hidden;*/ /*aanzetten om achter kant te editen*/
+    /*visibility: hidden;*/ /*aanzetten om de achter kant te editen.*/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -115,13 +116,13 @@ body{
     color: white;
     border: solid 1em #99DDC8;
     border-radius: 1em;
-    box-shadow: 10px 10px 30px 1px #95BF74;
+    box-shadow: 10px 10px 30px 1px #95BF74; /*met deze propertie kan je schaduw toevoegen*/
 }
 .front_content{
     display: inline-flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    height: 100%; /*Met deze propertie bepaal je de hoogte van je div, door de hoogte 100% te geven zorg je er voor dat deze div de zelfde hoogte aan neemt als zijn parent*/
+    width: 100%;  /*Met deze propertie bepaal je de breedtte van je div, door de breedtte 100% te geven zorg je er voor dat deze div de zelfde hoogte aan neemt als zijn parent*/
 }
 
 .front_content_top{
@@ -137,7 +138,7 @@ body{
 
 .front_content_mid{
     display: flex;
-    justify-content: center;
+    justify-content: center; /*Met deze propertie zorg je ervoor dat alle content die geplaatst woord in de div in het midden gecentreerd wordt*/
     align-items: center;
     position: relative;
     height: 40%;
@@ -147,11 +148,11 @@ body{
 .front_content_mid::after{
     content:'';
     width: 99.99%;
-    background: #659B5E;
+    background: #659B5E; 
     position: absolute;
     inset: 0;
-    transform: skewY(-25deg);
-    z-index: 1;
+    transform: skewY(-25deg); 
+    z-index: 1; 
 }
 
 .picture-1{
@@ -181,12 +182,12 @@ body{
     transform: skewY(-25deg);
     position: relative; bottom:3em; right: -1em;
 }
-.the_back{
+.the_back{ /*met deze selector, selecteer ik de achterkant van de kaart*/
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden; 
-    background: #95BF74;
+    background: #95BF74; /*met deze propetie bepaal je de kleur van de achtergrond van de desbetreffende div*/
     color: white; 
     border: solid 1em #99DDC8;
     border-radius: 1em;
@@ -232,7 +233,7 @@ body{
     width: 100%;
 }
 
-.back_top_block_2_content{
+.back_top_block_2_content{ /*Met deze selector selecteer ik het bovenste blok van de achterkant van de kaart*/
     padding-top: 1.2em;
     padding-left: 1.05em;
     display: flex;
@@ -266,7 +267,7 @@ body{
     width: 50%;
 }
 
-.back_mid_block_1_title{
+.back_mid_block_1_title{ /*met deze selector, selecteer ik op de achterkant van de kaart, de middelste div, hiervan het eerste blok en in dit blok de title, hier staan: Hobbies*/
     padding-top: 3.3em;
     display: flex;
     justify-content: center;
